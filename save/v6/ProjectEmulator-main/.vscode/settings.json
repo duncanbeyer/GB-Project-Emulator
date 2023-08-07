@@ -57,6 +57,7 @@
       "type_traits": "c",
       "dma.h": "c"
     },
+    "cmake.configureOnOpen": false,
     // "editor.hover.enabled": false
   }
   

@@ -4,6 +4,7 @@
 #include <cpu.h>
 #include <ui.h>
 #include <timer.h>
+#include <stdint.h>
 #include <pthread.h>
 #include <dma.h>
 #include <ppu.h>

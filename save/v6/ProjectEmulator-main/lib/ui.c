@@ -1,4 +1,5 @@
 #include <ui.h>
+#include <stdint.h>
 #include <emu.h>
 #include <bus.h>
 #include <../sdl2_lib/include/SDL.h>
