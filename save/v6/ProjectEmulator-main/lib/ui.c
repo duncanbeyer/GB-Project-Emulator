@@ -37,26 +37,26 @@ void ui_init() {
         SDL_PIXELFORMAT_ARGB8888, SDL_TEXTUREACCESS_STREAMING,
      SCREEN_WIDTH, SCREEN_HEIGHT);
 
-    //                          16 tiles x 32 tiles, each 8 pixels wide
-    SDL_CreateWindowAndRenderer(16 * 8 * scale, 32 * 8 * scale, 0, 
-    &sdlDebugWindow, &sdlDebugRenderer);
+    // //                          16 tiles x 32 tiles, each 8 pixels wide
+    // SDL_CreateWindowAndRenderer(16 * 8 * scale, 32 * 8 * scale, 0, 
+    // &sdlDebugWindow, &sdlDebugRenderer);
 
-    // Debug Window Creation Information
+    // // Debug Window Creation Information
 
-    debugScreen = SDL_CreateRGBSurface(0, (16 * 8 * scale) + (16 * scale),
-    (32 * 8 * scale) + (64 * scale), 32, 0x00FF0000, 0x0000FF00, 0x000000FF, 0xFF000000);
+    // debugScreen = SDL_CreateRGBSurface(0, (16 * 8 * scale) + (16 * scale),
+    // (32 * 8 * scale) + (64 * scale), 32, 0x00FF0000, 0x0000FF00, 0x000000FF, 0xFF000000);
 
 
-    sdlDebugTexture = SDL_CreateTexture(sdlDebugRenderer, 
-    SDL_PIXELFORMAT_ARGB8888, SDL_TEXTUREACCESS_STREAMING,
-    (16 * 8 * scale) + (16 * scale),
-    (32 * 8 * scale) + (64 * scale));
+    // sdlDebugTexture = SDL_CreateTexture(sdlDebugRenderer, 
+    // SDL_PIXELFORMAT_ARGB8888, SDL_TEXTUREACCESS_STREAMING,
+    // (16 * 8 * scale) + (16 * scale),
+    // (32 * 8 * scale) + (64 * scale));
     
-    int x, y;
+    // int x, y;
     
-    SDL_GetWindowPosition(sdlWindow, &x, &y);
-    SDL_SetWindowPosition(sdlDebugWindow, x + SCREEN_WIDTH + 10, y);
-    // Arrange the Debug window to sit next to the game window
+    // SDL_GetWindowPosition(sdlWindow, &x, &y);
+    // SDL_SetWindowPosition(sdlDebugWindow, x + SCREEN_WIDTH + 10, y);
+    // // Arrange the Debug window to sit next to the game window
 
 }
 
@@ -153,7 +153,7 @@ void ui_update() {
     SDL_RenderPresent(sdlRenderer);
 
 
-    update_debug_window();
+    // update_debug_window();
 }
 
 void ui_on_key(bool down, u32 key_code) {

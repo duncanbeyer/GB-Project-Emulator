@@ -79,7 +79,6 @@ int emu_run(int argc, char **argv) {
     u32 prev_frame = 0;
 
    while (!ctx.die) {
-    Sleep(1000);
     ui_handle_events();
 
     if (prev_frame != ppu_get_context()->current_frame) {
